@@ -1,0 +1,216 @@
+/* 1. Estilos gerais */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    color: #12100e;
+    background-color: #fafbfc;
+    line-height: 1.6;
+}
+
+.conteudo {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+    text-decoration: dashed;
+    text-decoration: #106BCC;
+}
+
+a {
+    color: #d28b1f;
+}
+
+/* 2. Menu */
+header {
+    background-color: white;
+    border-bottom: 10px solid #106BCC;
+    border-radius: 10px;
+    border-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.nome-site {
+    font-weight: bold;
+    font-size: 19px;
+    text-decoration: #106BCC;
+    color: #cc8711;
+}
+
+nav a {
+    margin-left: 22px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 3. Apresentação e fotografia */
+.apresentacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 90px 0 75px;
+}
+
+.etiqueta {
+    color: #59748b;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 10px 0 18px;
+}
+
+.apresentacao p {
+    max-width: 450px;
+}
+
+.fotografia {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #e4eaf0;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #e6720c;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border-bottom: #106BCC;
+}
+
+.botao:hover {
+    background-color: #816339;
+}
+
+/* 4. Sobre mim e currículo */
+.secao {
+    border-top: 1px solid #e5eaf0;
+    padding: 50px 0;
+}
+
+
+hr{
+    stroke-width: 10px;
+    stroke-color: #106BCC;
+    line-height: 5px;
+}
+
+
+
+h2 {
+    font-size: 25px;
+    margin: 0 0 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 32px;
+}
+
+h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.item-cv {
+    display: flex;
+    gap: 24px;
+    margin: 20px 0;
+}
+
+.data {
+    min-width: 150px;
+    color: #617185;
+    font-size: 14px;
+}
+
+.item-cv p {
+    margin: 4px 0;
+}
+
+.competencias {
+    padding-left: 20px;
+}
+
+.competencias li {
+    margin-bottom: 6px;
+}
+
+/* 5. Rodapé */
+footer {
+    padding: 40px 0 25px;
+    color: white;
+    background-color: #106BCC;
+    border-radius: 10px;
+    border-bottom: #106BCC;
+
+}
+
+footer a {
+    color: #c6e4ff;
+}
+
+.nota {
+    margin-top: 45px;
+    font-size: 13px;
+    color: #c1cbd6;
+}
+
+/* 6. Adaptação a ecrãs pequenos */
+@media (max-width: 650px) {
+    .topo, .apresentacao, .item-cv {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin: 0 18px 0 0;
+    }
+
+    .apresentacao {
+        padding: 50px 0;
+        gap: 25px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .fotografia {
+        order: -1;
+        width: 150px;
+        height: 150px;
+    }
+}
+
